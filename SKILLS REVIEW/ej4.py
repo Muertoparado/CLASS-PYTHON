@@ -1,5 +1,5 @@
 """ 4. Que son las expresiones regulares en Python? """
 
 
-print("determinan el tipo de operaciones en una formula  tales como * + / ")
-print("x=((a*b)/q)²")
+print("funcionan para escribir una formula especificando ciertos comportamientos ")
+print("ej alternaion |(compuerta or \n agrupacion() ")
