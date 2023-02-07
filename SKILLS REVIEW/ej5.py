@@ -14,4 +14,9 @@ e=input("digite nombre \n")
 r=input("digite apellido \n ")
 print(f"cadena de datos lista [{e},{r}]")
 
+z=input("desea continuar [s/n]")
+if (z=='s'):
+        print("continuar : true")
+else:
+        print("false")
 
