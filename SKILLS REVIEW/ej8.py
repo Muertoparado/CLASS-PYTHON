@@ -2,26 +2,27 @@
 utilice 2 condicionales (if) anidados. """
 
 print("-------BIENVENIDO--------\n")
-c=print("desea ingresar a la tienda  [s/n]")
+c=input("desea ingresar a la tienda  [s/n]")
 
-if c=='s':
+if (c=='n'):
+        print("----pronto regreso----")
+else:
+       
         print("productos \n")
         print("1.camisas \n")
         print("2.zapatos \n")
         print("3.carteras \n")
-
-        p=input("digite el numero de la lista del producto a seleccionar")
-        if(p==1):
+        p=input("digite el numero de la lista del producto a seleccionar ")
+        
+        if(p=='1'):
             print("a seleccionado camisas")
-        elif(p==2):
+            x=input("cuantas camisas desea comprar")
+            print("----Gracias por la compra------\n ha seleccioado ",x, "camisas")
+        elif(p=='2'):
             print("a seleccionado zapatos")
-        elif(p==3):
+            x=input("cuantos pares zapatos desea comprar")
+            print("----Gracias por la compra------\n ha seleccioado ",x, "pares de zapatos")
+        elif(p=='3'):
             print("a seleccionado cartera")
-
-        elif(c=='n'):
-            print("pronto regreso")
-
-
-
-else:
-            print("asd-")
+            x=input("cuantas carteras desea comprar")
+            print("----Gracias por la compra------\n ha seleccioado ",x, "carteras")
