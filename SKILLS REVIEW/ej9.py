@@ -21,16 +21,16 @@ else:
         while (x!=2):
             c=0
             c+=1
-            nombre= Personas(input("Digite su nombre: \n"))
+            nombre=(input("Digite su nombre: \n"))
             apellido=input("Digite los apellidos: \n")
             telefono= input("Digite el telfono: \n")
             ingfecha=int(input("Digite la fecha de ingreso: \n"))
             edad=input("Digite la edad: \n")
+            asignacion= Personas (nombre,apellido, telefono, ingfecha,edad)
             ant=2023-ingfecha
-            print(f'empleados registrados # \n {Personas.nombre}\n {Personas.apellido}\n {Personas.telefono} {Personas.ingfecha}\n{Personas.edad}\n antigüedad {ant}')
+            
+            print(f'empleados registrados # {c}\n Nombre: {asignacion.nombre}\n Apellidos: {asignacion.apellido}\n Telefono:{asignacion.telefono} \n Fecha ingreso:{asignacion.ingfecha}\nEdad: {asignacion.edad}  Antigüedad {ant}')
 
-            x=input("Desea registrar otro empleado \n 1. Si \n 2. No \n")
+            x=input(" \n Desea registrar otro empleado \n 1. Si \n 2. No \n")
 
-            break 
-        print("Gracias por ingresar")
-
+            break
