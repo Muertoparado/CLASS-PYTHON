@@ -13,7 +13,7 @@ def lista():
        print(artemis)
     if(g==2.1):
        print(sputnik)
-nombre=""
+
 def agregar():
     
     if(g==1.2):
@@ -21,39 +21,44 @@ def agregar():
         artemis.append(nombre)
         print("Usuario Artemis agregado. ")
     if(g==2.2):
-        nombre=input("Agregar nombre")
+        nombre=input("Agregar nombre: ")
         sputnik.append(nombre)
         print("Usuario Sputnik agregado")
 
 def eliminar():
     if(g==1.3):
-        nombre=input("Agregar nombre")
+        nombre=input("Agregar nombre: ")
         artemis.remove(nombre)
         print("Usuario Artemis eliminado")
     if(g==2.3):
-        nombre=input("Agregar nombre")
+        nombre=input("Agregar nombre: ")
         sputnik.remove(nombre)
         print("Usuario Sputnik eliminado")
 
 def ordenar():
     if(g==1.4):
-        artemis.sorted(artemis)
+        artemis.sort()
         print(f"Lista ordenada Artemis {artemis}")
     if(g==2.4):
-        sorted(sputnik.split())
+        sputnik.sort()
         print(f"Lista ordenada Sputnik {sputnik}")
 
 def buscar():
-    nom=input("digite el nombre a buscar")
+    nom=input("digite el nombre a buscar: ")
     if(g==1.5):
         if(nom in artemis):
             print(f"usuario encontrado {nom}")
+        else:
+                print("Usuario no registrado")
+
     if(g==2.5):
         if(nom in sputnik):
             print(f"usuario encontrado {nom}")
+        else:
+                print("Usuario no registrado")
 
-q=1     
-while(q!=0):
+g=3  
+while(g!=0):
     
     g=float(input("----------MENU-----------\n"
     "1. Crear lista Artemis\n"
@@ -87,7 +92,7 @@ while(q!=0):
             ordenar()
     elif(g==1.5):
             print("A seleccionado Buscar camper lista Artemis")
-            ordenar()
+            buscar()
 
     elif(g==2):
             print("A seleccionado Crear lista Sputnik ")
@@ -107,7 +112,7 @@ while(q!=0):
     elif(g==2.5):
             g=2.5
             print("A seleccionado Buscar camper lista Sputnik")
-            ordenar()
+            buscar()
             
     
 
